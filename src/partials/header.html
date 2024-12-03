@@ -1,19 +1,28 @@
-<header class="header">
-  <div class="container">
+<header class="page-header">
+  <div class="header-box container">
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
+      <a class="logo" href="./index.html"
+        >Lloyd<span class="accent">Jefferson.</span></a
+      >
+      <button class="btn-header" id="btn-header">
+        <span class="circle" id="header-mob-span"></span>
+      </button>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+        <li class="nav-link-tag">
+          <a class="nav-tag" href="#about">About me</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="nav-link-tag">
+          <a class="nav-tag" href="#projects">Projects</a>
+        </li>
+        <li class="nav-link-tag">
+          <a class="nav-tag" href="#contacts">Contacts</a>
         </li>
       </ul>
     </nav>
+    <button class="mob-menu-btn js-open-menu">
+      <svg class="mob-svg" width="16" height="16">
+        <use href="./img/icon.svg#icon-lets-mob"></use>
+      </svg>
+    </button>
   </div>
 </header>
